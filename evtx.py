@@ -57,7 +57,8 @@ EVTXChunkHeader = Struct(\
     'FreeSpaceOffset'           / Int32ul,
     'EventRecordsChecksum'      / Int32ul,
     Padding(68),
-    'Checksum'                  / Int32ul
+    'Checksum'                  / Int32ul,
+    Padding(384)
 )
 
 '''
